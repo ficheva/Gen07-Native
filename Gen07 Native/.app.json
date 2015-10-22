@@ -1,15 +1,148 @@
 {
   "type": "NativeScript",
-  "isNew": true,
+  "views": [
+    {
+      "type": "view",
+      "components": [],
+      "name": "home",
+      "title": "Home",
+      "addToNavigation": true,
+      "icon": "home"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "form",
+          "components": [
+            {
+              "type": "field",
+              "name": "username",
+              "title": "Username",
+              "inputType": "text",
+              "placeholder": "johndoe"
+            }
+          ],
+          "name": "formViewModel",
+          "submitButton": "Confirm",
+          "cancelButton": "Cancel"
+        }
+      ],
+      "name": "formView",
+      "title": "Form",
+      "addToNavigation": true,
+      "icon": "bookmarks"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "authentication",
+          "name": "authenticationViewModel",
+          "dataProvider": "gen007Backend",
+          "emailLabel": "Email",
+          "passwordLabel": "Password",
+          "signinLabel": "Sign In",
+          "signinRedirect": "home",
+          "enableRegistration": true,
+          "gotoRegisterLabel": "Register",
+          "registerEmailLabel": "Email",
+          "registerPasswordLabel": "Password",
+          "registerNameLabel": "Name",
+          "registerLabel": "Register",
+          "registerRedirect": "home",
+          "gotoSigninLabel": "Sign In"
+        }
+      ],
+      "name": "authenticationView",
+      "title": "Authentication",
+      "addToNavigation": false
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "list",
+          "name": "dataListViewModel",
+          "dataProvider": "gen007Backend",
+          "collection": "Activities",
+          "headerField": "Text",
+          "masterDetails": true,
+          "detailHeaderField": "Text",
+          "detailImageField": "Picture",
+          "pullToRefresh": false,
+          "endlessScroll": false
+        }
+      ],
+      "name": "dataListView",
+      "title": "Data List",
+      "addToNavigation": true,
+      "icon": "organize"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "form",
+          "components": [],
+          "name": "formView1Model",
+          "submitButton": "Confirm",
+          "cancelButton": "Cancel"
+        }
+      ],
+      "name": "formView1",
+      "title": "Form",
+      "addToNavigation": true,
+      "icon": "bookmarks"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "about",
+          "name": "aboutViewModel",
+          "appName": "My App",
+          "appVersion": "Version 1",
+          "appDescription": "App description",
+          "contactButton": true,
+          "contactLabel": "Contact us",
+          "contactMail": "support@example.com",
+          "facebookButton": true,
+          "facebookLabel": "Like us on Facebook",
+          "facebookLink": "https://www.facebook.com/Telerik",
+          "twitterButton": true,
+          "twitterLabel": "Follow us on Twitter",
+          "twitterLink": "https://twitter.com/telerik"
+        }
+      ],
+      "name": "aboutView",
+      "title": "About",
+      "addToNavigation": true,
+      "icon": "info"
+    }
+  ],
   "dataProviders": [
     {
-      "type": "NativeScript:dataProvider",
-      "title": "DefaultProvider",
-      "name": "defaultProvider",
+      "type": "dataProvider",
+      "name": "gen007Backend",
+      "title": "Gen 0.0.7 / Gen 0.0.7 Backend",
       "source": "everlive",
-      "offlineStorage": false,
-      "everliveKey": "MzTRJcLAWzFl6Wew",
-      "everliveUrl": ""
+      "everliveKey": "yO45egqOINKPi80k",
+      "everliveUrl": "//testtap.telerik.com/bs-api/v1/",
+      "offlineStorage": true
+    },
+    {
+      "type": "dataProvider",
+      "name": "gen007Backend1",
+      "title": "Gen 0.0.7 / Gen 0.0.7 Backend",
+      "source": "everlive",
+      "everliveKey": "yO45egqOINKPi80k",
+      "everliveUrl": "//testtap.telerik.com/bs-api/v1/",
+      "offlineStorage": false
     }
-  ]
+  ],
+  "name": "nativeScriptApp",
+  "navigation": "none",
+  "view": "home",
+  "skin": "native"
 }

@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-  <!--
-    Application theme.
-
-      Warning! Due to different default theme Android 5.0+ uses only values-v21 to style the app.
-  -->
+  <!-- Application theme. -->
   <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
     <item name="android:windowActionBar">false</item>
     <item name="android:windowNoTitle">true</item>

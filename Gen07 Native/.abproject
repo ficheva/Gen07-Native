@@ -1,11 +1,11 @@
 {
   "ProjectName": "Gen07 Native",
-  "ProjectGuid": "8a58528d-eb4c-4333-9db3-aa0d75cca1f1",
+  "ProjectGuid": "b97dc78e-28d0-4209-9bee-01fb373581cb",
   "projectVersion": 1,
-  "AppIdentifier": "com.telerik.Gen07Native",
-  "DisplayName": "Gen07 Native",
+  "AppIdentifier": "com.telerik.Gen007Native",
+  "DisplayName": "Gen 0.0.7 Native",
   "Author": "",
-  "Description": "Gen07 Native",
+  "Description": "Gen 0.0.7 Native",
   "BundleVersion": "1.0",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
@@ -23,6 +23,6 @@
   ],
   "AndroidHardwareAcceleration": "false",
   "iOSStatusBarStyle": "Default",
-  "FrameworkVersion": "1.4.3",
+  "FrameworkVersion": "1.0.1",
   "Framework": "NativeScript"
 }

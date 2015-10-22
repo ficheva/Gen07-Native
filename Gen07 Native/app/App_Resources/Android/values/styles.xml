@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-  <!--
-    Application theme.
-
-    Warning! This file is used for app styling in Android up to 4.4.x.
-  -->
+  <!-- Application theme. -->
   <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
     <item name="android:windowActionBar">false</item>
     <item name="android:windowNoTitle">true</item>
